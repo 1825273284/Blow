@@ -8,7 +8,7 @@ import {
     Image,
     TouchableHighlight
 } from 'react-native';
-
+import {pHeight,pWidth,pSize} from './user/util';
 
 export default class Main extends Component
 {
@@ -32,7 +32,7 @@ export default class Main extends Component
                         renderIcon={() => <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi595x04xj301s01sq2q.jpg'}} style={styles.icon}/> }
                         renderSelectedIcon={() => <Image style={styles.icon} source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi595x04xj301s01sq2q.jpg'}} />}
                         onPress={() => this.setState({ selectedTab: 'One' })}>
-                        <Text>this is one</Text>
+                        <Text onPress={()=>this.props.navigation.navigate('ScrollTabTest')}>this is one</Text>
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'Two'}
@@ -68,24 +68,24 @@ const styles = StyleSheet.create({
         flex: 1
     },
     tab: {
-        height: 50,
+        height: pHeight(50),
         backgroundColor: '#ffffff',
         alignItems: 'center'
     },
     tabText: {
-        marginTop: 1,
+        marginTop: pHeight(1),
         color: 'gray',
-        fontSize: 10
+        fontSize: pSize(10)
     },
     selectedTabText: {
-        marginTop: 1,
+        marginTop: pHeight(1),
         color: 'black',
-        fontSize: 10
+        fontSize: pSize(10)
     },
     icon: {
-        width: 20,
-        height: 20,
+        width: pWidth(25),
+        height: pHeight(25),
         resizeMode: 'stretch',
-        marginTop: 5
+        marginTop: pHeight(5)
     }
 });
