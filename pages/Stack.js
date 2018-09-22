@@ -1,6 +1,5 @@
 import React,{Component} from 'react';
 import {
-    Text,
     View,
 }from 'react-native';
 import TabTest from './TabTest';
@@ -12,6 +11,10 @@ const Stack = createStackNavigator({
        navigationOptions:{
            header:null
        }
+   },
+   ScrollTabTest:{
+       screen:ScrollTabTest
    }
+
 });
 export default Stack;
