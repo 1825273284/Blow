@@ -10,8 +10,7 @@ import {
 } from 'react-native';
 import {pHeight,pWidth,pSize} from './user/util';
 
-export default class Main extends Component
-{
+export default class TabTest extends Component {
 
     constructor(props) {
         super(props);
