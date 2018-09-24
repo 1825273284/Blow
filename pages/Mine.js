@@ -3,7 +3,8 @@ import {
     Image,
     StyleSheet,
     Text,
-    View
+    View,
+    StatusBar
 }from 'react-native';
 import {pHeight,pWidth,pSize} from './user/util';
 export default class Mine extends Component{
@@ -13,7 +14,7 @@ export default class Mine extends Component{
     render(){
         return(
             <View style={styles.container}>
-                <View style={styles.One}>
+                    <View style={styles.One}>
                     <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvj95i8actj30e80e8q57.jpg'}}
                            style={styles.Image}
                     />

@@ -3,6 +3,7 @@ import {
     View,
 }from 'react-native';
 import TabTest from './TabTest';
+import Mine from './Mine';
 import {createStackNavigator} from 'react-navigation';
 
 const Stack = createStackNavigator({
@@ -12,9 +13,12 @@ const Stack = createStackNavigator({
            header:null
        }
    },
-   ScrollTabTest:{
-       screen:ScrollTabTest
-   }
+    Mine:{
+       screen:Mine,
+        navigationOptions:{
+           headerTitle:'关于我们'
+        }
+    }
 
 });
 export default Stack;

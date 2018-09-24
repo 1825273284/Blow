@@ -9,6 +9,7 @@ import {
     TouchableHighlight
 } from 'react-native';
 import {pHeight,pWidth,pSize} from './user/util';
+import Attempt from "./MyScene";
 
 export default class TabTest extends Component {
 
@@ -51,8 +52,8 @@ export default class TabTest extends Component {
                         renderIcon={() => <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5dsykmmj301c01ca9t.jpg'}} style={styles.icon}/> }
                         renderSelectedIcon={() => <Image style={styles.icon} source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5dsykmmj301c01ca9t.jpg'}} />}
                         onPress={() => this.setState({ selectedTab: 'Three' })}>
-                        <Text>this is three</Text>
-                    </TabNavigator.Item>
+                        <Attempt {...this.props}/>
+                      </TabNavigator.Item>
                 </TabNavigator>
             </View>
         );
