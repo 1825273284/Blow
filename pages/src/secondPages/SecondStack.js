@@ -41,7 +41,7 @@ const SecondTabStack = createBottomTabNavigator({
 });
 
 
-export default class SecondStack extends Component<Props> {
+export default class SecondStack extends Component {
     render() {
         return (
             <SecondTabStack/>

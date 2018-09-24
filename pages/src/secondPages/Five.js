@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 
-export default class Five extends Component<Props> {
+export default class Five extends Component {
     static navigationOptions = {
         title: "低利率"
     };

@@ -3,7 +3,7 @@ import {StyleSheet, Text, View} from 'react-native';
 
 
 
-export default class Two extends Component<Props> {
+export default class Two extends Component {
     static navigationOptions = {
         title: "用户认证"
     };
