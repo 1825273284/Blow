@@ -32,7 +32,7 @@ export default class Main extends Component
                         renderIcon={() => <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi595x04xj301s01sq2q.jpg'}} style={styles.icon}/> }
                         renderSelectedIcon={() => <Image style={styles.icon} source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi595x04xj301s01sq2q.jpg'}} />}
                         onPress={() => this.setState({ selectedTab: 'One' })}>
-                        <Text onPress={()=>this.props.navigation.navigate('ScrollTabTest')}>this is one</Text>
+                        <Text onPress={()=>this.props.navigation.navigate('Mine')}>this is one</Text>
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'Two'}
@@ -42,7 +42,7 @@ export default class Main extends Component
                         renderIcon={() => <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5bn0arcj301c01c0n1.jpg'}} style={styles.icon}/> }
                         renderSelectedIcon={() => <Image style={styles.icon} source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5bn0arcj301c01c0n1.jpg'}} />}
                         onPress={() => this.setState({ selectedTab: 'Two' })}>
-                        <Text>this is two</Text>
+                        <Text onPress={()=>this.props.navigation.navigate('MyReward')}>this is two</Text>
                     </TabNavigator.Item>
                     <TabNavigator.Item
                         selected={this.state.selectedTab === 'Three'}
