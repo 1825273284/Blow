@@ -1,9 +1,8 @@
 import React,{Component} from 'react';
-import {
-    View,
-}from 'react-native';
+import {View,}from 'react-native';
 import TabTest from './TabTest';
 import {createStackNavigator} from 'react-navigation';
+import SecondStack from "./src/secondPages/SecondStack";
 
 const Stack = createStackNavigator({
    TabTest:{
@@ -12,9 +11,8 @@ const Stack = createStackNavigator({
            header:null
        }
    },
-   ScrollTabTest:{
-       screen:ScrollTabTest
-   }
-
+    SecondPage1:{
+       screen: SecondStack
+    }
 });
 export default Stack;
