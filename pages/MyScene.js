@@ -155,7 +155,7 @@ const styles = StyleSheet.create({
     },
     first:{
         backgroundColor: '#F5FCFF',
-        height:height*0.4,
+        height:height*0.3,
         width:width,
         position:'absolute',
         top:0,
