@@ -5,7 +5,8 @@ import {
     View,
     Dimensions,
     StyleSheet,
-    FlatList
+    FlatList,
+    StatusBar
 }from 'react-native';
 import {pSize,pHeight,pWidth} from './user/util';
 import Data from '../Data/data1';
@@ -35,10 +36,15 @@ export default class MyReward extends Component{
     render(){
         return(
             <View styles={styles.container}>
+                <StatusBar
+                    animated={true}
+                    barStyle={'dark-content'}
+                    backgroundColor={'white'}
+                />
                 <View style={styles.One}/>
                 <View style={styles.Two}>
                     <View style={styles.MarginStyle}>
-                        <View style={{flex:1,backgroundColor:'#ffff66'}}/>
+                        <View style={{flex:1,backgroundColor:'#ffdc26'}}/>
                         <View style={{flex:3}}/>
                     </View>
                     <View style={styles.TwoTwo}>
@@ -53,7 +59,7 @@ export default class MyReward extends Component{
                         <Text>"我的->我的奖励->奖励明细"查看奖励结果</Text>
                     </View>
                     <View style={styles.MarginStyle}>
-                        <View style={{flex:1,backgroundColor:'#ffff66'}}/>
+                        <View style={{flex:1,backgroundColor:'#ffdc26'}}/>
                         <View style={{flex:3}}/>
                     </View>
                 </View>
@@ -77,7 +83,7 @@ const styles = StyleSheet.create({
        alignItems:'center'
    },
    One:{
-       backgroundColor:'#ffff66',
+       backgroundColor:'#ffdc26',
        height:pHeight(40)
    },
    Two:{

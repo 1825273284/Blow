@@ -1,9 +1,3 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- * @flow
- */
-
 import React, { Component } from 'react';
 import {
 
@@ -22,111 +16,111 @@ export default class Attempt extends Component {
     render() {
         return (
             <View style={styles.container}>
-               <StatusBar                             //设置状态栏背景颜色
+                <StatusBar                             //设置状态栏背景颜色
                     backgroundColor={'#ffdc26'}
-               />
+                />
 
-                    <View style={styles.first}>
-                        <View style={styles.one}>
-                            <Text style={styles.textStyle}>我的</Text>
+                <View style={styles.first}>
+                    <View style={styles.one}>
+                        <Text style={styles.textStyle}>我的</Text>
+                    </View>
+                </View>
+
+
+                <View style={styles.two}>
+                    <View style={styles.left}>
+                        <View style={styles.img}>
+                            <Image
+                                style={styles.imageStyle3}
+                                source={require('./img/money.png')}
+                            />
                         </View>
                     </View>
-
-
-                    <View style={styles.two}>
-                        <View style={styles.left}>
-                            <View style={styles.img}>
-                                <Image
-                                    style={styles.imageStyle3}
-                                    source={require('./img/money.png')}
-                                />
-                            </View>
-                        </View>
-                        <View style={styles.right}>
-                            <Text style={styles.text2}>
-                                极简借贷 轻松解决燃眉之急
-                            </Text>
-                            <View style={styles.textStyle2}>
-                                <Text style={styles.text3}>登录/注册</Text>
-                            </View>
+                    <View style={styles.right}>
+                        <Text style={styles.text2}>
+                            极简借贷 轻松解决燃眉之急
+                        </Text>
+                        <View style={styles.textStyle2}>
+                            <Text style={styles.text3}>登录/注册</Text>
                         </View>
                     </View>
+                </View>
 
 
 
-                    <View style={styles.three}>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/message.png')}
-                            />
-                            <Text style={styles.text4}>我的邀请</Text>
-                            <Image
-                                style={styles.imageStyle}
-                                source={require('./img/right.png')}
-                            />
-                        </View>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/paper.png')}
-                            />
-                            <Text style={styles.text4}>我的邀请码</Text>
-                        </View>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/present.png')}
-                            />
-                            <Text style={styles.text4}>我的奖励</Text>
-                            <Image
-                                style={styles.imageStyle}
-                                source={require('./img/right.png')}
-                            />
-                        </View>
-                        <View style={styles.textStyle4}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/question.png')}
-                            />
-                            <Text style={styles.text4}>常见帮助</Text>
-                            <Image
-                                style={styles.imageStyle}
-                                source={require('./img/right.png')}
-                            />
-                        </View>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/weChat.png')}
-                            />
-                            <Text style={styles.text4}>微信公众号</Text>
-                            <Text style={styles.text5}>米米信</Text>
-                            <Image
-                                style={styles.imageStyle2}
-                                source={require('./img/right.png')}
-                            />
-                        </View>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/up.png')}
-                            />
-                            <Text style={styles.text4}>版本更新</Text>
-                            <Text style={styles.text5}>已是最新版本</Text>
-                        </View>
-                        <View style={styles.textStyle3}>
-                            <Image
-                                style={styles.imageStyle4}
-                                source={require('./img/comment.png')}
-                            />
-                            <Text style={styles.text4}>给我留言</Text>
-                            <Image
-                                style={styles.imageStyle}
-                                source={require('./img/right.png')}
-                            />
-                        </View>
-                        <TouchableOpacity onPress={()=>this.props.navigation.navigate('Mine')}>
+                <View style={styles.three}>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/message.png')}
+                        />
+                        <Text style={styles.text4}>我的邀请</Text>
+                        <Image
+                            style={styles.imageStyle}
+                            source={require('./img/right.png')}
+                        />
+                    </View>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/paper.png')}
+                        />
+                        <Text style={styles.text4}>我的邀请码</Text>
+                    </View>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/present.png')}
+                        />
+                        <Text style={styles.text4}>我的奖励</Text>
+                        <Image
+                            style={styles.imageStyle}
+                            source={require('./img/right.png')}
+                        />
+                    </View>
+                    <View style={styles.textStyle4}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/question.png')}
+                        />
+                        <Text style={styles.text4}>常见帮助</Text>
+                        <Image
+                            style={styles.imageStyle}
+                            source={require('./img/right.png')}
+                        />
+                    </View>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/weChat.png')}
+                        />
+                        <Text style={styles.text4}>微信公众号</Text>
+                        <Text style={styles.text5}>米米信</Text>
+                        <Image
+                            style={styles.imageStyle2}
+                            source={require('./img/right.png')}
+                        />
+                    </View>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/up.png')}
+                        />
+                        <Text style={styles.text4}>版本更新</Text>
+                        <Text style={styles.text5}>已是最新版本</Text>
+                    </View>
+                    <View style={styles.textStyle3}>
+                        <Image
+                            style={styles.imageStyle4}
+                            source={require('./img/comment.png')}
+                        />
+                        <Text style={styles.text4}>给我留言</Text>
+                        <Image
+                            style={styles.imageStyle}
+                            source={require('./img/right.png')}
+                        />
+                    </View>
+                    <TouchableOpacity onPress={()=>this.props.navigation.navigate('Mine')}>
                         <View style={styles.textStyle3}>
                             <Image
                                 style={styles.imageStyle4}
@@ -138,8 +132,8 @@ export default class Attempt extends Component {
                                 source={require('./img/right.png')}
                             />
                         </View>
-                        </TouchableOpacity>
-                    </View>
+                    </TouchableOpacity>
+                </View>
 
             </View>
         );
@@ -278,5 +272,3 @@ const styles = StyleSheet.create({
     },
 
 });
-
-

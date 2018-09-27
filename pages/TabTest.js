@@ -9,12 +9,14 @@ import {
     TouchableHighlight,
     Dimensions,
     AsyncStorage,
-    ImageBackground
+    ImageBackground,
+    StatusBar
 } from 'react-native';
 import Swiper from 'react-native-swiper';
 const {width,height} = Dimensions.get('window');
 import {pHeight,pWidth,pSize} from './user/util';
 import Attempt from "./MyScene";
+import EarnTest from "./EarnTest";
 
 export default class TabTest extends Component {
 
@@ -100,7 +102,7 @@ export default class TabTest extends Component {
                                 renderIcon={() => <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5bn0arcj301c01c0n1.jpg'}} style={styles.icon}/> }
                                 renderSelectedIcon={() => <Image style={styles.icon} source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvi5bn0arcj301c01c0n1.jpg'}} />}
                                 onPress={() => this.setState({ selectedTab: 'Two' })}>
-                                <Text onPress={()=>this.props.navigation.navigate('MyReward')}>this is two</Text>
+                               <EarnTest {...this.props}/>
                             </TabNavigator.Item>
                             <TabNavigator.Item
                                 selected={this.state.selectedTab === 'Three'}

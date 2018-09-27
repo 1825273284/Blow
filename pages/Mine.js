@@ -14,6 +14,11 @@ export default class Mine extends Component{
     render(){
         return(
             <View style={styles.container}>
+                <StatusBar
+                    animated={true}
+                    barStyle={'dark-content'}
+                    backgroundColor={'white'}
+                />
                     <View style={styles.One}>
                     <Image source={{uri:'http://ww1.sinaimg.cn/large/005T39qagy1fvj95i8actj30e80e8q57.jpg'}}
                            style={styles.Image}
